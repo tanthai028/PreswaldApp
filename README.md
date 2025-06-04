@@ -1,39 +1,41 @@
-# Title
-preswald.text("# PicklePaddle Insights")
+# PicklePaddle Insights
 
-# Subtitle
-preswald.text("## Overview")
+## Overview
 
-# Description
-preswald.text("This application provides insights into various pickleball paddles based on their attributes such as price, weight, swing weight, twist weight, and RPM. Users can filter the paddles to find options that fit their preferences and visualize the relationships between different attributes.")
+PicklePaddle Insights is an interactive dashboard that helps users explore and compare pickleball paddles based on attributes like price, weight, swing weight, twist weight, and RPM.  
+Use filters and visualizations to find paddles that fit your style and budget.
 
-# Data Source
-preswald.text("## Data Source")
-preswald.text("The dataset used in this application contains detailed information about different pickleball paddles, including their specifications and prices.")
+---
 
-# Features
-preswald.text("## Features")
-preswald.text("- Filter paddles based on price and specifications.")
-preswald.text("- Visualize relationships between price and various paddle attributes.")
-preswald.text("- Interactive user interface for exploring paddle data.")
+## Data Source
 
-# Technologies Used
-preswald.text("## Technologies Used")
-preswald.text("- Python")
-preswald.text("- Plotly for visualizations")
-preswald.text("- Pandas for data manipulation")
-preswald.text("- Preswald for user interface components")
+This app uses a curated dataset of pickleball paddles, including detailed specifications such as weight, swing weight, twist weight, RPM, and price.
 
-# Getting Started
-preswald.text("## Getting Started")
-preswald.text("To run this application, ensure you have the necessary libraries installed and use the following command to start the app.")
+---
 
-# Installation
-preswald.text("### Installation")
-preswald.text("1. Clone the repository.")
-preswald.text("2. Install required packages using `pip install -r requirements.txt`.")
-preswald.text("3. Run the app.")
+## Features
 
-# License
-preswald.text("## License")
-preswald.text("This project is licensed under the MIT License.")
+- 💰 Filter paddles based on price and performance metrics  
+- 📊 Visualize relationships between paddle stats (price vs weight, RPM, etc.)  
+- 🖱 Interactive UI for easy paddle exploration
+
+---
+
+## Technologies Used
+
+- 🐍 Python  
+- 📈 Plotly (data visualizations)  
+- 🧮 Pandas (data manipulation)  
+- 🖼 Preswald (UI + dashboard layout)
+
+---
+
+## Getting Started
+
+To run this app locally:
+
+1. Clone the repository
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
