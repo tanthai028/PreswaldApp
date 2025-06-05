@@ -63,7 +63,7 @@ def parse_rpm(rpm):
 filtered_df["Weight (oz)"] = filtered_df["Weight"].apply(parse_weight)
 filtered_df["Swing Weight (g)"] = filtered_df["Swing weight"].apply(parse_twist_swing_weight)
 filtered_df["Twist Weight (g)"] = filtered_df["Twist weight"].apply(parse_twist_swing_weight)
-filtered_df["RPM"] = filtered_df["Twist weight"].apply(parse_rpm)
+filtered_df["RPM"] = filtered_df["RPM"].apply(parse_rpm)
 
 # Drop invalid values
 filtered_df = filtered_df.dropna(subset=["Weight (oz)"])
@@ -113,12 +113,11 @@ fig3 = px.scatter(
     title="Price vs Twist Weight of Paddles (by Tier)"
 )
 text("## Price vs Twist Weight Analysis")
-plotly(fig2)
+plotly(fig3)
 
 # 4.4 Create a visualization for Price vs RPM
-filtered_rpm = filtered_df.dropna(subset=["RPM"])
 fig4 = px.scatter(
-    filtered_rpm,
+    filtered_df,
     x="RPM",
     y="Price",
     color="Paddle Tier",
